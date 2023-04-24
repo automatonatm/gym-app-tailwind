@@ -1,5 +1,4 @@
 import { BenefitType, Selectedpage } from "@/shared/types";
-import React from "react";
 import {
   HomeModernIcon,
   UserGroupIcon,

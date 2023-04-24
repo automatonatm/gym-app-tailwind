@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Logo from "@/assets/Logo.png";
 import { flexBetween } from "@/styles";
@@ -6,12 +5,12 @@ import Link from "./Link";
 import { Selectedpage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
+import { useState } from "react";
 
 type Props = {
   selectedPage: Selectedpage;
   setSelectedPage: (value: Selectedpage) => void;
-  isTopOfPage: boolean
-  
+  isTopOfPage: boolean;
 };
 
 const NavBar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
@@ -122,7 +121,7 @@ const NavBar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
               />
             </div>
 
-            <div className="flex flex-col items-center justify-center gap-5 mt-10">
+            <div className="mt-10 flex flex-col items-center justify-center gap-5">
               <p>Sign In</p>
               <ActionButton setSelectedPage={setSelectedPage}>
                 Become a Member
