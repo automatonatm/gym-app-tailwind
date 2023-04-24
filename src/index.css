@@ -11,7 +11,7 @@ body,
     height: 100%;
     width: 100%;
     font-family: 'DM Sans', sans-serif;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 
     @apply text-gray-500
 }

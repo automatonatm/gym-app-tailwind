@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 import Navbar from "@/components/navbar/Navbar";
 import { Selectedpage } from "@/shared/types";
+import Home from "@/components/home/Home";
+import Benefits from "@/components/benefits/Benefits";
+import OurClasses from "@/components/ourClasses/OurClasses";
+import ContactUs from "./components/contactus/ContactUs";
+import Footer from "@/components/footer/Footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<Selectedpage>(
@@ -32,6 +37,11 @@ function App() {
         isTopOfPage={isTopOfPage}
         setSelectedPage={setSelectedPage}
       />
+      <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer  />
     </div>
   );
 }

@@ -24,7 +24,9 @@ const NavBar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 
   return (
     <nav>
-      <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
+      <div
+        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}
+      >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {/*  LEFT SIDE */}
@@ -93,30 +95,39 @@ const NavBar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 
           {/* MENU ITEMS */}
 
-          <div className="ml-[33%] flex flex-col gap-10 text-2xl">
-            <Link
-              page="Home"
-              selectedPage={selectedPage}
-              setSelectedPage={selectedPage}
-            />
+          <div className="flex flex-col">
+            <div className="ml-[33%] flex flex-col gap-10 text-2xl">
+              <Link
+                page="Home"
+                selectedPage={selectedPage}
+                setSelectedPage={selectedPage}
+              />
 
-            <Link
-              page="Benefits"
-              selectedPage={selectedPage}
-              setSelectedPage={selectedPage}
-            />
+              <Link
+                page="Benefits"
+                selectedPage={selectedPage}
+                setSelectedPage={selectedPage}
+              />
 
-            <Link
-              page="Our Classes"
-              selectedPage={selectedPage}
-              setSelectedPage={selectedPage}
-            />
+              <Link
+                page="Our Classes"
+                selectedPage={selectedPage}
+                setSelectedPage={selectedPage}
+              />
 
-            <Link
-              page="Contact Us"
-              selectedPage={selectedPage}
-              setSelectedPage={selectedPage}
-            />
+              <Link
+                page="Contact Us"
+                selectedPage={selectedPage}
+                setSelectedPage={selectedPage}
+              />
+            </div>
+
+            <div className="flex flex-col items-center justify-center gap-5 mt-10">
+              <p>Sign In</p>
+              <ActionButton setSelectedPage={setSelectedPage}>
+                Become a Member
+              </ActionButton>
+            </div>
           </div>
         </div>
       )}
