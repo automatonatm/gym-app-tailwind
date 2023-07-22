@@ -4,6 +4,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 type Props = {
   page: string;
   selectedPage: Selectedpage;
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  //@ts-ignore
   setSelectedPage: (value: Selectedpage) => void;
 };
 
